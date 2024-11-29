@@ -32,8 +32,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Testimonial</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#work">Gallery</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#work">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -173,41 +174,6 @@
 </section>
 <!-- education section ends -->
 
-<section class="gallery" id="work">
-  <h2>Gallery Section</h2>
-  <div class="box-container">
-    <div class="box">
-      <img src="./assets/images/image1.jpg" alt="Image 1">
-      <div class="caption">
-        <h3>Image 1</h3>
-      </div>
-    </div>
-    <div class="box">
-      <img src="./assets/images/image2.jpg" alt="Image 2">
-      <div class="caption">
-        <h3>Image 2</h3>
-      </div>
-    </div>
-    <div class="box">
-      <img src="./assets/images/image3.jpg" alt="Image 3">
-      <div class="caption">
-        <h3>Image 3</h3>
-      </div>
-    </div>
-    <div class="box">
-      <img src="./assets/images/image4.jpg" alt="Image 4">
-      <div class="caption">
-        <h3>Image 4</h3>
-      </div>
-    </div>
-    <div class="box">
-      <img src="./assets/images/image5.jpg" alt="Image 5">
-      <div class="caption">
-        <h3>Image 5</h3>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -298,6 +264,126 @@
 
 </section>
 <!-- experience section ends -->
+
+<!-- Blog Section -->
+<section class="blog">
+  <h2 class="blog-heading"><b><u> Blog Posts</u></b></h2>
+  <div class="blog-container">
+    <div class="blog-post">
+      <div class="blog-image">
+        <img src="./assets/images/supply.jpg" alt="Blog Post Image">
+      </div>
+      <div class="blog-content">
+        <h3 class="blog-title">Why Integrating Branding, Advertising, and Supply Chain Is Key to Success </h3>
+        <p class="blog-date">Posted on: November 28, 2024</p>
+        <p class="blog-description">In today’s world, great products and catchy ads alone won’t cut it. For a brand to truly succeed, everything—from the story you tell to the product you deliver—needs to work together. That’s where integrating branding, advertising, and supply chain management becomes essential.
+
+        </p>
+        <button class="read-more" onclick="toggleContent(0)">Read More</button>
+        <div class="full-content">
+          <p>
+
+            In today’s world, great products and catchy ads alone won’t cut it. For a brand to truly succeed, everything—from the story you tell to the product you deliver—needs to work together. That’s where integrating branding, advertising, and supply chain management becomes essential.
+            
+            Branding: More Than a Logo
+            
+            Your brand is the promise you make to your customers. Whether you’re known for luxury, speed, or sustainability, it’s vital that your supply chain delivers on that promise. If your products arrive late or in poor condition, it reflects poorly on your brand and can leave customers frustrated.
+          </p>
+          <p>  
+            Advertising: Setting the Right Expectations
+            
+            Advertising brings your brand promise to life, but it’s only effective if what you’re advertising matches what you can actually deliver. Promoting next-day delivery is great, but only if your supply chain can make that happen. Otherwise, the disconnect will quickly damage your reputation.
+            
+            Supply Chain: The Silent Partner
+            
+            Behind every great brand and ad campaign is a supply chain that ensures everything runs smoothly. It’s what gets your products into the hands of customers as promised. A well-oiled supply chain is what makes your brand’s promises real—whether it’s fast delivery, product quality, or sustainability.
+            
+            When Everything Comes Together
+          </p>
+          <p>   
+            When branding, advertising, and supply chain are aligned, everything clicks. Teams working together, sharing data, and adjusting quickly to customer needs creates a seamless experience. This alignment builds trust, satisfaction, and loyalty—key ingredients for a strong, lasting brand.
+            
+            The Takeaway
+            
+            For brands to thrive today, they need more than great marketing or a smooth supply chain. They need both to work in harmony. When your brand promise, advertising, and supply chain are all in sync, you deliver on your commitments, build customer loyalty, and set yourself up for long-term success.</p>
+        </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="blog-post" id="blog">
+      <div class="blog-image">
+        <img src="./assets/images/coming.png" alt="Blog Post Image">
+      </div>
+      <div class="blog-content">
+        <h3 class="blog-title">Coming Soon</h3>
+        <p class="blog-date">Posted on: November 29, 2024</p>
+        <p class="blog-description">We will be uploading more blogs in the upcoming days.</p>
+        <button class="read-more" onclick="toggleContent(1)">Read More</button>
+        <div class="full-content">
+          <p>This is the full content of the second blog post.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // Toggle the visibility of the full content when the "Read More" button is clicked
+  function toggleContent(index) {
+      const fullContents = document.querySelectorAll('.full-content');
+      const blogPosts = document.querySelectorAll('.blog-post');
+      const button = blogPosts[index].querySelector('.read-more');
+
+      if (fullContents[index].style.display === 'none' || fullContents[index].style.display === '') {
+          fullContents[index].style.display = 'block';
+          button.textContent = 'Read Less'; // Change button text to "Read Less"
+      } else {
+          fullContents[index].style.display = 'none';
+          button.textContent = 'Read More'; // Change button text back to "Read More"
+      }
+  }
+</script>
+<!-- blog ends -->
+
+<!-- gallery starts -->
+<section class="gallery" id="work">
+  <h2>Gallery Section</h2>
+  <div class="box-container">
+    <div class="box">
+      <img src="./assets/images/image1.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Image 1</h3>
+      </div>
+    </div>
+    <div class="box">
+      <img src="./assets/images/image2.jpg" alt="Image 2">
+      <div class="caption">
+        <h3>Image 2</h3>
+      </div>
+    </div>
+    <div class="box">
+      <img src="./assets/images/image3.jpg" alt="Image 3">
+      <div class="caption">
+        <h3>Image 3</h3>
+      </div>
+    </div>
+    <div class="box">
+      <img src="./assets/images/image4.jpg" alt="Image 4">
+      <div class="caption">
+        <h3>Image 4</h3>
+      </div>
+    </div>
+    <div class="box">
+      <img src="./assets/images/image5.jpg" alt="Image 5">
+      <div class="caption">
+        <h3>Image 5</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- gallery ends -->
+
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
